@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcGISServerGraphAPI", "ArcGISServerGraphAPI\ArcGISServerGraphAPI.csproj", "{F5F386C6-7409-4A30-AD1D-D18957901411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcGISServerGraphAPI.Tests", "ArcGISServerGraphAPI.Tests\ArcGISServerGraphAPI.Tests.csproj", "{FB32464A-2514-4AFF-BB1A-2F5460C6E47B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F386C6-7409-4A30-AD1D-D18957901411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F386C6-7409-4A30-AD1D-D18957901411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F386C6-7409-4A30-AD1D-D18957901411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F386C6-7409-4A30-AD1D-D18957901411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB32464A-2514-4AFF-BB1A-2F5460C6E47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB32464A-2514-4AFF-BB1A-2F5460C6E47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB32464A-2514-4AFF-BB1A-2F5460C6E47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB32464A-2514-4AFF-BB1A-2F5460C6E47B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
