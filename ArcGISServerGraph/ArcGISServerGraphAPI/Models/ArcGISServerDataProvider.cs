@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Security.Principal;
 using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -12,11 +12,14 @@ namespace ArcGISServerGraphAPI.Models
 // ReSharper disable once InconsistentNaming
     public class ArcGISServerDataProvider
     {
-        private static string _basePath = "http://msk-gis01/arcgis/rest/services/";
+        private static string GetServerUrl()
+        {
+            return ConfigurationManager.AppSettings["serverUrl"];
+        }
 
         public static JToken GetData(string path)
         {
-            var uri = new UriBuilder(new Uri(new Uri(_basePath), path))
+            var uri = new UriBuilder(new Uri(new Uri(GetServerUrl()), path))
             {
                 Query = "f=json"
             }.Uri;
